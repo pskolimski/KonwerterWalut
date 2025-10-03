@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KonwerterWalut"
         mc:Ignorable="d"
-        Title="Konwerter Walut - Autor: 12345678901"
+        Title="Konwerter Walut - Autor: Patryk Skolimowski"
         Height="600" Width="800"
         WindowStartupLocation="CenterScreen"
         Background="#F0FFF0"
@@ -71,7 +71,6 @@
             <StackPanel>
                 <TextBlock Text="Wyniki i kursy walut" FontWeight="Bold" FontSize="16" Foreground="#006400" Margin="0,0,0,15"/>
 
-                <!-- Panel wyników konwersji -->
                 <Border Background="#F0FFF0" BorderBrush="#228B22" BorderThickness="2" CornerRadius="8" Padding="20" Margin="0,0,0,15" Opacity="0.9">
                     <StackPanel>
                         <TextBlock x:Name="lblResult" Text="Wynik konwersji: " FontWeight="Bold" FontSize="16" Foreground="#006400" Background="White" Padding="10" Margin="0,0,0,10"/>
@@ -80,7 +79,6 @@
                     </StackPanel>
                 </Border>
 
-                <!-- Tabela kursów walut -->
                 <Border Background="White" BorderBrush="#228B22" BorderThickness="2" CornerRadius="8" Padding="0" Margin="0">
                     <Grid>
                         <Grid.RowDefinitions>
@@ -94,7 +92,6 @@
                             <ColumnDefinition Width="2*"/>
                             <ColumnDefinition Width="2*"/>
                         </Grid.ColumnDefinitions>
-                        <!-- Nagłówek tabeli -->
                         <Border Grid.Row="0" Grid.ColumnSpan="3" Background="#228B22" Padding="12">
                             <Grid>
                                 <Grid.ColumnDefinitions>
@@ -107,7 +104,6 @@
                                 <TextBlock Text="Zmiana" Foreground="White" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Grid.Column="2"/>
                             </Grid>
                         </Border>
-                        <!-- Wiersze danych -->
                         <Border Grid.Row="1" Grid.ColumnSpan="3" Background="#f9fff9" Padding="8">
                             <Grid>
                                 <Grid.ColumnDefinitions>
